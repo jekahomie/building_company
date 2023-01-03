@@ -1,0 +1,276 @@
+
+
+@media (max-width: 700px) {
+    // Тут делаем бургер
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 125px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #007fff;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+    .menu__contact{
+        display: none;
+    }
+    //тут делаем под хидерное пространство 
+    
+    // Тут Бенефитс 
+    .benefits__content{
+        display: flex;
+        flex-direction: column;
+        .benefits__body{
+            padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+    ._container{
+        display: flex;
+        flex-direction: column;
+    }
+    .construction__month_bar{
+        display: flex;
+        flex-direction: column;
+        button{
+            margin: 10px 0;
+        }
+    }
+    .map-container{
+        position: absolute !important;
+        margin-right: 15px;
+        padding-top: 340px !important;
+    }
+    .map__legend{
+        transform: scale(0.6) !important;
+    }
+    .underheader__main__content{
+        flex-direction: column !important;
+        .advertation_body{
+            width: auto !important;
+            button{
+                margin-right: 10px !important;
+                &:last-child{
+                    margin: 0 !important;
+                }
+
+            }
+        }
+    }
+    .footer__1st__section{
+        .right__section{
+            display: flex !important;
+            flex-direction: column;
+            margin: 0 !important;
+            margin-top: 20px;
+            .button__block{
+                margin-top: 20px;
+            }
+            .question__block{
+                margin: 0 !important;
+            }
+        }
+    }
+    .footer__2nd__section{
+        flex-direction: column !important;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    .slick-dots{
+        left: 25% !important;
+    }
+}
+@media (max-width:525px) {
+    .slider__card_body{
+        img{
+            width: 100% !important;
+        }
+    }
+    .partners__card{
+        width: 100% !important;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        min-width: none !important;
+    }
+    .button_wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        justify-content: center;
+        margin: 0 120px;
+        padding: 25px !important;
+        .secondarybtn{
+            margin-top: 15px;
+        }
+
+        span{
+            padding: 10px !important;
+        }
+    }
+    .left__section{
+        img{
+            
+        }
+    }
+    .photo__card_body{
+        img{
+            width: 100% !important; 
+        }
+    }
+    .button__block{
+        button{
+            padding: 15px 48px !important;
+        }
+    }
+    .construction__month_bar{
+        .slick-next{
+            top: 27% !important;
+            right: 7% !important;
+        }
+        .slick-prev{
+            top: 27% !important;
+            left: 7% !important;
+        }
+    }
+    .slick-dots{
+        left: 17% !important;
+    }
+}
+@media (max-width:1000px) {
+    .advertation_body{
+        width: auto !important;
+    }
+    .photo__body{
+        justify-content: center !important;
+    }
+    .where__to__buy{
+        p{
+            font-size: 12px;
+        }
+    }   h3{
+        font-size: 16px !important;
+    }
+    .user__info{
+        p{
+            padding-top: 12px;
+        }
+    }
+    .feedback__body{
+        flex-wrap: wrap;
+        .feedback__card{
+            margin: 10px 10px !important;
+        }
+        
+    }
+    .footer__1st__section{
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        .left__section{
+            margin-bottom: 10px;
+        }
+        .right__section{
+            display: flex;
+            justify-content: space-between;
+            .button__block{
+                
+                button{
+                    width: auto !important;
+                }
+            }
+        }
+    }
+    .footer__2nd__section{
+        .phone{
+            h3{
+                font-size: 12px !important;
+            }
+        }
+    }
+    
+}
+@media (max-width:1070px) {
+    .where__to__buy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .right_section_wrapper{
+            transform: rotate(90deg);
+        }
+        .right_section_main_content{
+            margin-top: 20px;
+            transform: rotate(270deg);
+        }
+    }
+    
+}
+@media (max-width:1200px) {
+    .partners__content{
+        flex-direction: column;
+    }
+    .photo__body{
+        justify-content: center !important;
+    }
+    .slider__box{
+        justify-content: center !important;
+    }
+    .benefits__zone{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+    .slider__card_body{
+        position: relative;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+    }
+    .photo__card_body{
+        position: relative;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+    }
+}
+@media (max-width: 1300px) {
+    .underheader__main__content{
+        padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .benefits__zone{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+
+    
+}
