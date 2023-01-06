@@ -803,6 +803,7 @@ body {
   margin-top: 10px;
   justify-content: center;
   display: flex;
+  flex: 1 1 auto;
   height: 160px;
   background-color: #fff;
   gap: 20px;

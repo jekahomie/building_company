@@ -986,7 +986,7 @@ body {
                 margin-top: 10px;
                 justify-content: center;
                 display: flex;
-
+                flex: 1 1 auto;
                 height: 160px;
                 background-color: #fff;
                 gap: 20px;
@@ -999,14 +999,12 @@ body {
                     justify-content: center;
                     align-items: center;
                 }
-
                 img {
                     width: 64px;
                     height: 64px;
                     border-radius: 50px;
                     margin-right: 20px;
                 }
-
                 .partner_brand {
                     span {
                         text-transform: uppercase;
